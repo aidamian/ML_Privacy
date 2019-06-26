@@ -5,8 +5,11 @@ Requirements:
 - PySyft
 
 ##Notes:
+
 - `test_01` it's a simple naive implementation of local differential privacy
+
 - `test_03` similar to 1st test the second simulates the global DP
+
 - `test_03` actually simultates a full process of applying differential privacy techniques to Deep Learning. The used dataset is `MNIST` and we assume we have various numbers of localized databases where we can train our model and we also vary the privacy leakeage threshold. The final results are below.
 Initial simple split train in workers (data overlapping between remotes and local  but no overlapping between remotes) then train on full with labels:
 
